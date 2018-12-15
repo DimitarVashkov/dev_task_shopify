@@ -14,7 +14,7 @@
   <%= submit_tag("Search") %>
 <% end %>
 
-<h2>Top 3 Products</h2>
+<h2>Top 3 Selling Products for <%= @date %></h2>
 <ul>
   <% @topItems.each do |name,quantity| %>
   <li><%= name %> - <%= quantity %></li>
