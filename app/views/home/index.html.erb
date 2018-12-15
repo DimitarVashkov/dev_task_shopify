@@ -13,3 +13,10 @@
   <%= date_field_tag(:date) %>
   <%= submit_tag("Search") %>
 <% end %>
+
+<h2>Top 3 Products</h2>
+<ul>
+  <% @topItems.each do |name,quantity| %>
+  <li><%= name %> - <%= quantity %></li>
+  <% end %>
+</ul>
